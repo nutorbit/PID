@@ -30,6 +30,7 @@ def main(n, speed, tau_p, tau_d):
     fig, ax = plt.subplots(1, 1, figsize=(8,8))
     ax.plot(x_trajectory, y_trajectory, 'g', label='PID controller')
     ax.plot(x_trajectory, np.zeros(n), 'r', label='reference')
+    plt.title(f"P={tau_p}, D={tau_d}")
     plt.show()
 
 
